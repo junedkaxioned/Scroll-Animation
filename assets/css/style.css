@@ -126,6 +126,7 @@ ul {
   flex-direction: column;
 }
 
+
 .content-box {
   width: 400px;
   height: 200px;
@@ -138,11 +139,11 @@ ul {
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   color: #fff;
   transform: translateX(400%);
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
 }
-
-.show-box { transform: translateX(0); }
+.content-box:nth-of-type(even) { transform: translateX(-400%); }
 .content-box h2 { font-size: 45px; }
+.show-box { transform: translateX(0) !important; }
 
 
 /*=================================
